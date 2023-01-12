@@ -9,6 +9,6 @@ import javax.servlet.http.HttpServletResponse;
 @org.springframework.stereotype.Controller("/simple")
 public class SimpleController implements Controller {
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        return new ModelAndView("/WEB-INF/simple.jsp");
+        return new ModelAndView("simple");
     }
 }
